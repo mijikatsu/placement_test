@@ -5,6 +5,7 @@
 #      2週間以上の範囲は選択できるように作成しました。2週間未満の場合はアラートが出ます。
 # 環境：Python 3.8.2
 #      Streamlit, version 1.27.2
+# URL：https://placementtest-h89lpbxtb3btttzyrcvuja.streamlit.app/
 #
 
 import pandas as pd
