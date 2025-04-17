@@ -4,22 +4,22 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
-# --- アプリ終了フラグの管理 ---
+# アプリ終了フラグの管理 
 if "app_ended" not in st.session_state:
     st.session_state.app_ended = False
 
-# --- 入力欄（文字列入力として扱う） ---
+# 入力欄（文字列入力として扱う） 
 st.title("Temperature Correlation: 9AM vs 9PM")
 
 # 文字入力欄
 input_text = st.text_input("Enter 9AM temperature (℃) or type 'end' to quit:", value="")
-prediction_output = st.empty()  # ← 出力用の表示エリアを確保
+prediction_output = st.empty()  #出力用の表示エリアを確保
 
 # 「end」と入力されたら終了フラグを立てる
 if input_text.strip().lower() == "end":
     st.session_state.app_ended = True
 
-# --- 終了処理画面 ---
+# 終了処理画面
 if st.session_state.app_ended:
     st.empty()  # 画面をクリア（厳密には全部再描画しないだけ）
     st.markdown(
