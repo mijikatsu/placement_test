@@ -1,3 +1,12 @@
+#
+# 課題プログラミング
+#
+# 説明：pythonで全てレンダリングされるstreamlitというライブラリを使っております。
+#      2週間以上の範囲は選択できるように作成しました。2週間未満の場合はアラートが出ます。
+# 環境：Python 3.8.2
+#      Streamlit, version 1.27.2
+#
+
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
